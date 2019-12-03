@@ -6,14 +6,13 @@ $width-tablet-landscape: 900px !default;
 $width-desktop-mdpi: 1200px !default;
 $width-desktop-hdpi: 1800px !default;
 
-$family-sans: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+$family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
   "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
   "Helvetica", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
   "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$family-sans-var: "Inter var" !default;
-$family-code: "Iosevka SS05", "Roboto Mono", "Menlo", "Monaco", "Inconsolata",
+$family-code: "Roboto Mono", "Menlo", "Monaco", "Inconsolata",
   "Consolas", "Liberation Mono", "Courier New", monospace !default;
-$family-remarkability: $family-sans-var, $family-sans !default;
+$family-remarkability: $family-sans !default;
 
 $font-normal: 400 !default;
 $font-semibold: 600 !default;
@@ -90,4 +89,8 @@ $closer-lists: true !default;
 $custom-colors: true !default;
 $custom-fonts: true !default;
 $text-adjusting: true !default;
-$variable-fonts: true !default;
+$variable-fonts: false !default;
+
+@if $variable-fonts {
+  $family-remarkability: $family-sans-var, $family-sans !default;
+}
