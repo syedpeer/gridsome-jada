@@ -1,8 +1,8 @@
 ---
 title: What's Gridsome?
 path: /whats-gridsome
-date: 2019-12-01
-updated: 2019-12-01
+date: 2019-12-02
+updated: 2019-12-02
 author: [jada]
 tags: ['guide']
 ---

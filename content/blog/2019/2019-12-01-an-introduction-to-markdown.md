@@ -1,8 +1,8 @@
 ---
 title: An Introduction to Markdown
 path: /an-introduction-to-markdown
-date: 2019-11-30
-updated: 2019-11-30
+date: 2019-12-01
+updated: 2019-12-01
 author: [jada]
 tags: ['guide']
 ---
