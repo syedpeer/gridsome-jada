@@ -2,6 +2,8 @@
 
 A simple blog starter template for [Gridsome](https://gridsome.org/)
 
+![Preview](https://github.com/Microflash/jada/raw/master/preview.png)
+
 ## Demo
 
 <https://gridsome-jada.netlify.com>
