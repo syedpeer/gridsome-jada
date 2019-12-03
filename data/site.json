@@ -1,0 +1,10 @@
+{
+  "title": "Jada",
+  "description": "A simple blog starter template for Gridsome",
+  "url": "https://mflash.dev/jada/",
+  "favicon": "https://raw.githubusercontent.com/Microflash/jada/master/src/favicon.png",
+  "copyright": "Copyright 2019 Jada",
+  "maintainer": "Jada Maintainer",
+  "about": "https://github.com/Microflash/jada",
+  "postEditUrl": "https://github.com/Microflash/jada/edit/master/content/"
+}

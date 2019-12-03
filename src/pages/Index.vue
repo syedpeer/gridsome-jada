@@ -1,0 +1,63 @@
+<template>
+  <Layout>
+    <Hero>
+      &mdash; A simple<br/>
+      blog starter template<br/>
+      for <a href="https://gridsome.org/" target="_blank" rel="noopener noreferrer">Gridsome</a>
+    </Hero>
+    <div class="container posts">
+      <div class="grid-2">
+        <div class="column" v-for="post in $page.posts.edges" :key="post.id">
+          <PostCard :item="post.node"/>
+        </div>
+      </div>
+      <Pagination class="post-pagination" v-if="$page.posts.pageInfo.totalPages > 1" :info="$page.posts.pageInfo"/>
+    </div>
+  </Layout>
+</template>
+
+<page-query>
+query Posts ($page: Int) {
+  posts: allPost (sortBy: "date", order: DESC, perPage: 6, page: $page) @paginate {
+    totalCount
+    pageInfo {
+      totalPages
+      currentPage
+    }
+    edges {
+      node {
+        id
+        title
+        date (format: "MMM D, Y")
+        summary
+        timeToRead
+        path
+        tags {
+          id
+          title
+          path
+        }
+      }
+    }
+  }
+}
+</page-query>
+
+<script>
+import Hero from '~/components/Hero'
+import Pagination from '~/components/Pagination'
+import PostCard from '~/components/PostCard'
+
+export default {
+  metaInfo() {
+    return {
+      title: 'Home'
+    }
+  },
+  components: {
+    Hero,
+    Pagination,
+    PostCard
+  }
+}
+</script>

@@ -1,0 +1,9 @@
+[
+  {
+    "id": "jada",
+    "name": "Jada",
+    "bio": "Resident blogger at Jada",
+    "avatar": "../static/profile/jada.png",
+    "twitter": "@Microflash"
+  }
+]
