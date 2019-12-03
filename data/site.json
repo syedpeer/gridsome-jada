@@ -1,7 +1,7 @@
 {
   "title": "Jada",
   "description": "A simple blog starter template for Gridsome",
-  "url": "https://mflash.dev/jada/",
+  "url": "https://gridsome-jada.netlify.com",
   "favicon": "https://raw.githubusercontent.com/Microflash/jada/master/src/favicon.png",
   "copyright": "Copyright 2019 Jada",
   "maintainer": "Jada Maintainer",
