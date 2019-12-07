@@ -102,5 +102,5 @@ Licensed under [MIT](https://github.com/Microflash/microflash.github.io/blob/rel
 - `jada` is based on [Microflash](https://github.com/Microflash/microflash.github.io), my personal site.
 - Icons are from [Feather Icons](https://feathericons.com/).
 - Illustrations are from [unDraw](https://undraw.co/).
-- Many of the ideas and implementations were pulled from the [official Gridsome site](https://github.com/gridsome/gridsome.org) and [Gridsome Portfolio Starter](https://github.com/drehimself/gridsome-portfolio-starter).
+- Many of the ideas and implementations were inspired from the [official Gridsome site](https://github.com/gridsome/gridsome.org) and [Gridsome Portfolio Starter](https://github.com/drehimself/gridsome-portfolio-starter).
 - In case you were wondering, `jada` (`جاد`) means **earnest** in Arabic.

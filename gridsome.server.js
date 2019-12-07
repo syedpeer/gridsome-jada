@@ -6,11 +6,12 @@ const authorData = require(authorDataSource)
 const { GraphQLString } = require('gridsome/graphql')
 const marked = require('marked')
 const plainTextRenderer = require('./marked.config').plainTextRenderer
+const decode = require('unescape')
 
 const summarize = (content) => {
   const idxOfFirstHeader = content.indexOf('###')
   const firstParagraph = content.substr(0, idxOfFirstHeader)
-  return marked(firstParagraph, { renderer: plainTextRenderer, sanitize: false }).replace('&#39;', '\'')
+  return decode(marked(firstParagraph, { renderer: plainTextRenderer, sanitize: false }))
 }
 
 module.exports = function (api, options) {
