@@ -8,9 +8,9 @@
       </Hero>
       <div class="container post">
         <main class="article">
-          <h3>Features &mdash;</h3>
+          <h2>Features &mdash;</h2>
           <ul class="content">
-            <li>Clean and simple design</li>
+            <li>Responsive and accessible design</li>
             <li>Blog with Markdown content</li>
             <li>Inbuilt <a target="_blank" rel="noopener noreferrer" href="https://sass-lang.com/">Sass</a> integration</li>
             <li>Theme Switcher for Dark and Light modes (with system preference detection)</li>

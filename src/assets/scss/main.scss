@@ -87,7 +87,7 @@ input {
 
   &::placeholder {
     color: var(--text-default);
-    opacity: .5;
+    opacity: 0.5;
   }
 }
 
@@ -117,7 +117,7 @@ input {
 }
 
 .slash {
-  opacity: .25;
+  opacity: 0.25;
 }
 
 .post {
@@ -134,6 +134,8 @@ input {
   .article {
     width: $expanse-full;
     padding: $gap-md;
+    border: 1px solid var(--border-muted);
+    border-radius: $radius;
     background-color: var(--background-card);
 
     @include tablet-landscape {
@@ -144,7 +146,7 @@ input {
 
 .post-edit {
   z-index: $rise-md;
-  margin-top: $gap-md;
+  margin-top: $gap-xs;
   margin-bottom: $gap-md;
 
   @include tablet-portrait {
@@ -152,7 +154,7 @@ input {
   }
 
   svg {
-    margin-right: $gap-xs / 2;
+    margin-right: ($gap-xs / 2);
     margin-left: $gap-xs;
   }
 }
@@ -162,10 +164,15 @@ input {
   background-color: var(--background-card-hover);
   width: $expanse-full;
   overflow: hidden;
-  box-shadow: $shadow;
+  border: 1px solid var(--border-muted);
   border-radius: $radius;
   padding: $gap-sm;
   font-size: $text-sm;
+
+  &:last-child {
+    padding-bottom: $gap-xs;
+    margin-bottom: 0;
+  }
 
   .card-category {
     letter-spacing: $text-relaxed;
@@ -191,7 +198,7 @@ input {
   @include tablet-portrait {
     margin-left: $gap-0;
     margin-right: $gap-0;
-    width: $expanse-full * .875;
+    width: $expanse-full * 0.875;
   }
 
   .post-pagination {
@@ -199,7 +206,7 @@ input {
     margin-bottom: $gap-md;
 
     @include tablet-landscape {
-      width: $expanse-half * .85;
+      width: $expanse-half * 0.85;
       margin-bottom: $gap-0;
     }
   }

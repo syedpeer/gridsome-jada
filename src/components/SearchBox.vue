@@ -114,13 +114,12 @@ export default {
 
     .search-input {
       background-color: var(--background-search);
+      border: 1px solid var(--border-muted);
       border-radius: $radius;
-      box-shadow: $shadow;
       padding: $gap-sm $gap;
       padding-left: $gap-lg;
       outline: none;
       width: $expanse-full;
-      border: none;
 
       &:focus, &:hover {
         background-color: var(--background-search-hover);
@@ -133,7 +132,7 @@ export default {
 
     .icon-search, .icon-close {
       position: absolute;
-      top: $gap-xs;
+      top: ($gap-xs * 1.25);
       color: $color-custom;
 
       &:focus, &:hover {
@@ -159,22 +158,12 @@ export default {
   width: $expanse-full;
   overflow-x: hidden;
   overflow-y: auto;
-  max-height: $gap-xl * 8;
-  box-shadow: $shadow;
+  max-height: ($gap-xl * 8);
   margin-top: $gap-xs;
-  border-radius: $radius;
+  border: 1px solid var(--border-muted);
 
   @include tablet-landscape {
     width: $expanse-lg;
-    box-shadow: $shadow-md;
-  }
-
-  @include desktop-mdpi {
-    box-shadow: $shadow-lg;
-  }
-
-  @include desktop-hdpi {
-    box-shadow: $shadow-xl;
   }
 
   .search-result {
@@ -229,7 +218,7 @@ export default {
 }
 
 .fade-enter-active, .fade-leave-active {
-  transition: opacity .2s;
+  transition: opacity 0.2s;
 }
 
 .fade-enter, .fade-leave-to {

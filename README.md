@@ -12,7 +12,7 @@ A simple blog starter template for [Gridsome](https://gridsome.org/)
 
 ## Features
 
-- Clean and simple design
+- Responsive and accessible design
 - Blog with Markdown content
 - Inbuilt [Sass](https://sass-lang.com/) integration
 - Theme Switcher for Dark and Light modes (with system preference detection)
@@ -20,7 +20,7 @@ A simple blog starter template for [Gridsome](https://gridsome.org/)
 - Smooth scrolling to sections with [vue-scrollto](https://github.com/rigor789/vue-scrollTo)
 - Tags and Pagination for blog posts
 - Syntax highlighting with [Shiki](https://github.com/octref/shiki)
-- Automatic or manual post summary
+- Automatic/manual post summary
 - Table of Content generation for blog posts
 - Accessible shortcuts for Table of Contents and Back to top
 - GitHub edit URL generation for a blog post
@@ -87,7 +87,9 @@ The search only indexes post title and summary. You can customize this behavior 
 
 ### Styles
 
-`jada` comes with [mixins](./src/assets/scss/_mixins.scss) for responsive layout, flexbox grid generation and @font-face generation. Feel free to customize the Sass files or integrate your favorite framework.
+`jada` comes with [mixins](./src/assets/scss/_mixins.scss) for responsive layout, flexbox grid generation and @font-face generation. It also has a very accessible color palette (based on [CIECAM02 color space](https://en.wikipedia.org/wiki/CIECAM02)).
+
+Feel free to customize the Sass files or integrate your favorite framework. If you want to generate a good color palette, check out Lyft's [Colorbox](http://www.colorbox.io/) and Adobe's [Leonardo](https://leonardocolor.io/).
 
 ### Gridsome
 

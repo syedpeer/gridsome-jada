@@ -53,7 +53,7 @@ footer {
 
   .attrib {
     p {
-      margin-bottom: $gap-xs / 2;
+      margin-bottom: ($gap-xs / 2);
 
       a {
         &:focus, &:hover {

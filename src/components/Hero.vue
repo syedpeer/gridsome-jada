@@ -19,18 +19,18 @@ export default {
 
 <style lang="scss" scoped>
 .hero {
-  margin-top: $gap-xs;
-  margin-bottom: $gap;
+  padding-top: $gap-xs;
+  padding-bottom: $gap;
   width: $expanse-full;
 
   @include tablet-portrait {
-    margin-top: $gap-sm;
-    margin-bottom: $gap-md;
+    padding-top: $gap-sm;
+    padding-bottom: $gap-md;
   }
 
-  @include tablet-portrait {
-    margin-top: $gap;
-    margin-bottom: $gap-lg;
+  @include tablet-landscape {
+    padding-top: $gap;
+    padding-bottom: $gap-xl;
   }
 
   h1 {
@@ -40,7 +40,7 @@ export default {
 
     @include tablet-portrait {
       font-size: $text-3xl;
-      width: $expanse-half * 1.5;
+      width: ($expanse-half * 1.5);
     }
   }
 
